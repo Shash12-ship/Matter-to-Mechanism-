@@ -1,4 +1,4 @@
-# Matter to Mechanism: BatteryHypoBench
+# Matter to Mechanism
 
 **A Multi-Dimensional Benchmark for Evaluating Co-Scientist AI in Battery Materials Research**
 
