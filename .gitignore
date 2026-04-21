@@ -1,0 +1,15 @@
+results/
+logs/
+*.out
+*.err
+*.pyc
+__pycache__/
+.hf_cache/
+.nltk_data/
+*.csv
+*.json
+*.pdf
+*.png
+.api_keys
+*.bak
+nohup.out
