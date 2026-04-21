@@ -44,8 +44,7 @@ python experiments_2_3_4.py \
 ```
 
 ## Dataset
-Available on HuggingFace: [anonymous during review]
-
+Available on HuggingFace
 ## Systems Evaluated
 - REFERENCE (ground truth)
 - Gemini 2.5 Flash (direct + retrieval-enabled)
