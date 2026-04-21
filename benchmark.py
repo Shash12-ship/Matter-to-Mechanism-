@@ -4,7 +4,7 @@ BatteryHypoBench: A Multi-Dimensional Benchmark for Co-Scientist Hypothesis Gene
 in Battery Materials Research
 
 NeurIPS 2026 Evaluations & Datasets Track Submission
-Author: Shashwat Sourav (Washington University in St. Louis / ORNL GRO)
+Author: Anonymous
 
 Usage:
     python benchmark.py --csv /path/to/battery_problem_solution_500.csv
@@ -1152,10 +1152,10 @@ def main():
         epilog=textwrap.dedent("""
         Examples:
           # Full benchmark on all rows
-          python benchmark.py --csv /projects/bfir/ssourav/battery_problem_solution_500.csv
+          python benchmark.py --csv /path/to/battery_problem_solution_500.csv
 
           # Quick test on 50 rows
-          python benchmark.py --csv /projects/bfir/ssourav/battery_problem_solution_500.csv --sample 50
+          python benchmark.py --csv /path/to/battery_problem_solution_500.csv --sample 50
 
           # Specific metrics only
           python benchmark.py --csv data.csv --metrics rcf hpa msi
@@ -1165,7 +1165,7 @@ def main():
               --cge-model gpt-4o --cge-api-type openai --cge-sample 100
 
           # Custom output directory
-          python benchmark.py --csv data.csv --output /projects/bfir/ssourav/bench_results/
+          python benchmark.py --csv data.csv --output /path/to/bench_results/
         """)
     )
     parser.add_argument(

@@ -11,7 +11,7 @@ Usage:
 
   # Run all systems you have keys for (50 problems):
   python run_coscientist_benchmark.py \\
-      --csv /projects/bfir/ssourav/battery_problem_solution_500.csv \\
+      --csv /path/to/battery_problem_solution_500.csv \\
       --sample 50 \\
       --output results/coscientist_benchmark/ \\
       --openai-api-key $OPENAI_API_KEY \\
@@ -21,7 +21,7 @@ Usage:
 
   # Specific systems only:
   python run_coscientist_benchmark.py \\
-      --csv /projects/bfir/ssourav/battery_problem_solution_500.csv \\
+      --csv /path/to/battery_problem_solution_500.csv \\
       --systems gpt-4o o3 gemini-2.5-pro sakana-ai-scientist futurehouse-crow \\
       --sample 50 \\
       --openai-api-key $OPENAI_API_KEY \\
@@ -30,13 +30,13 @@ Usage:
 
   # Include local ChemDFM (no API key needed, needs GPU):
   python run_coscientist_benchmark.py \\
-      --csv /projects/bfir/ssourav/battery_problem_solution_500.csv \\
+      --csv /path/to/battery_problem_solution_500.csv \\
       --systems chemdfm-8b gpt-4o gemini-2.5-pro \\
       --sample 30
 
   # Score reference (ground truth) hypotheses only (no API calls):
   python run_coscientist_benchmark.py \\
-      --csv /projects/bfir/ssourav/battery_problem_solution_500.csv \\
+      --csv /path/to/battery_problem_solution_500.csv \\
       --reference-only --sample 500
 
 SLURM (on NCSA Delta GH200):
@@ -418,20 +418,20 @@ def main():
 
           # Run all detectable systems on 50 problems:
           python run_coscientist_benchmark.py \\
-              --csv /projects/bfir/ssourav/battery_problem_solution_500.csv \\
+              --csv /path/to/battery_problem_solution_500.csv \\
               --sample 50 \\
               --openai-api-key $OPENAI_API_KEY \\
               --gemini-api-key $GEMINI_API_KEY
 
           # Specific systems:
           python run_coscientist_benchmark.py \\
-              --csv /projects/bfir/ssourav/battery_problem_solution_500.csv \\
+              --csv /path/to/battery_problem_solution_500.csv \\
               --systems gpt-4o o3 gemini-2.5-pro sakana-ai-scientist \\
               --sample 50 --openai-api-key $OPENAI_API_KEY --gemini-api-key $GEMINI_API_KEY
 
           # Reference only (score ground-truth, zero API calls):
           python run_coscientist_benchmark.py \\
-              --csv /projects/bfir/ssourav/battery_problem_solution_500.csv \\
+              --csv /path/to/battery_problem_solution_500.csv \\
               --reference-only --sample 500
         """)
     )
