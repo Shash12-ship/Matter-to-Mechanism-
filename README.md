@@ -1,4 +1,5 @@
 # Matter to Mechanism
+![BatteryHypoBench Dataset Overview](Dataset_Matter_to_Mechanism.png)
 
 **A Multi-Dimensional Benchmark for Evaluating Co-Scientist AI in Battery Materials Research**
 
